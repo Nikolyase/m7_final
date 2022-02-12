@@ -109,7 +109,7 @@ namespace SF.Task7.Final
         private string Courier;
         public HomeDelivery()
         {
-            Courier = "'Служба доставки Ласточка'";
+            Courier = "'Служба доставки Катапульта'";
 
         }
         public override void Move()
@@ -122,7 +122,7 @@ namespace SF.Task7.Final
     {
         public PickPointDelivery()
         {
-            Address = "Почтомат №1";
+            Address = "В ближайшей психушке";
 
         }
         public override void Move()
@@ -136,7 +136,7 @@ namespace SF.Task7.Final
         private string Shop;
         public ShopDelivery()
         {
-            Shop = "'Улыбка радуги'";
+            Shop = "'Интим'";
 
         }
         public override void Move()
@@ -149,9 +149,8 @@ namespace SF.Task7.Final
     {
         static void Main(string[] args)
         {
-            //Проект: сколько успела - столько натупила
-            //Уровень: Минус базовый
-
+            //Мало времени было, сделал как есть(
+            
             Order.User user = new Order.User();
 
             Console.WriteLine("Введите своё ФИО");
@@ -171,11 +170,11 @@ namespace SF.Task7.Final
 
             Order.Product[] prod = new Order.Product[n];
 
-            //Выбор товара не успела сделать, поэтому просто добавляю
-            prod[0] = new Order.Product { nameProduct = "Творог", typeProduct = "Молочные продукты", cost = 50.00 };
+            //Добавляю выбор товара так, нет времени
+            prod[0] = new Order.Product { nameProduct = "Палка", typeProduct = "Изделелия из дерева", cost = 50.00 };
             ord.AddProduct(prod[0]);
 
-            prod[1] = new Order.Product { nameProduct = "Макароны", typeProduct = "Мучные изделия", cost = 35.50 };
+            prod[1] = new Order.Product { nameProduct = "Вазелин", typeProduct = "Лубриканты", cost = 35.50 };
             ord.AddProduct(prod[1]);
 
             prod[2] = new Order.Product { nameProduct = "Ведро", typeProduct = "Хозтовары", cost = 99.99 };
